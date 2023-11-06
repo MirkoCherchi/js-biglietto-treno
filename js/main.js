@@ -19,12 +19,12 @@ const etaPasseggero = prompt ('Quanti anni hai?');
 console.log('Età passeggero: ', parseInt(etaPasseggero));
 
 const prezzo = (parseInt(percorsoKm) * 0.21);
-console.log('Prezzo intero: ', parseFloat(prezzo.toFixed(2)), '€');
+console.log('Prezzo intero: ', parseFloat(prezzo.toFixed(2)),'€');
 
 if (parseInt(etaPasseggero) < 18) {
-    console.log('Sconto minorenne: ', parseFloat((prezzo - prezzo / 100 * 20).toFixed(2)), '€');}
+    console.log('Sconto Under 18 del 20%:', parseFloat((prezzo - prezzo / 100 * 20).toFixed(2)), '€');}
 else if (parseInt(etaPasseggero) > 65){
-    console.log('Sconto Over 65: ', parseFloat((prezzo - prezzo / 100 * 40).toFixed(2)), '€');}
+    console.log('Sconto Over 65 del 40%:', parseFloat((prezzo - prezzo / 100 * 40).toFixed(2)), '€');}
 
 
 
